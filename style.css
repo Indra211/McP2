@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Delius+Unicase:wght@400;700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+:root{
+    --dmSans:'DM Sans';
+    --roboto:"Roboto";
+    --inter:"Inter"
+}
+body{
+    position: relative;
+}
+.icons {
+    position: sticky;
+    top: 120px;
+    z-index: 100; 
+    text-align:right;
+    margin-top: -240px;
+}
+.icons>div>img{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    padding: 2px;
+}
+.help{
+    position: fixed;
+    right: 48px;
+    bottom: 24px;
+    background: white;
+    border-radius: 100%;
+    padding: 4px;
+    z-index: 999;
+}
+
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    background: #6F6AF7;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.navbar >h2{
+    font-family: 'Delius Unicase';
+    font-weight: 700;
+    color: white;
+}
+.menu{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.menu>h4{
+    font-family: var(--dmSans);
+    font-weight:400;
+    color: white;
+}
+.menu input{
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+}
+.menu>h4>img{
+    height: 6px;
+    width: 8px;
+}
+.input-img img{
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+}
+.navbar>img{
+    height: 24px;
+    overflow: hidden;
+}
+
+.code-img-txt{
+    display: grid;
+    grid-template-columns: 30% 2% 68%;
+}
+.body1{
+   padding-top: 120px;
+}
+.code-img-txt{
+margin: 0px 80px;
+}
+.code-img-txt>img{
+    max-height: 400px;
+    max-width: 300px;
+    grid-column: 1/2;
+    overflow: hidden;
+    box-shadow: 4px 7px 32px 0px #00000070;
+
+}
+.code-img-txt>textarea{
+    grid-column: 3/4;
+    background: #E5D8FF;
+    border: none;
+    outline: none;
+    border-radius:8px ;
+    vertical-align:text-top;
+    resize: none;
+    padding: 16px;
+    font-family: var(--dmSans);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.score-cards{
+    margin: 200px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.score-cards p{
+    font-family: var(--dmSans);
+    font-weight: 400;
+    padding: 6px 48px 6px 8px;
+    color: white;
+}
+.score-card1{
+    background: #929DFF;
+}
+.score-card2{
+    background: #734CF2;
+}
+.score-card3{
+    background: #D288FF;
+}
+.score-card4{
+    background: #000000;
+}
+.score-card1, .score-card2, .score-card3, .score-card4 {
+    border-radius: 4px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+}
+.information-card{
+    margin: 100px 60px 40px 60px;
+    background: #483EFF;
+    padding: 16px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 30% 2% 68% ;
+    grid-template-rows: 5% 20% 15% 20% 15% 20% 5%;
+    border-radius: 16px;
+}
+.null-1{
+grid-row: 1/2;
+}
+.btn-1{
+    grid-row: 2/3;
+    background: #BCE0F6;
+    box-shadow: 0px 6px 35px 0px #00000063;
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+}
+.information-card>button{
+    font-family: var(--dmSans);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    
+}
+.sp-1{
+    grid-row: 3/4;
+}
+.btn-2,.btn-3{
+    border-radius: 16px;
+    border: 2px white solid;
+    background: transparent;
+}
+.btn-2{
+    grid-row: 4/5;
+}
+.btn-3{
+    grid-row: 6/7;
+}
+.sp-2{
+    grid-row: 5/6;
+}
+.null-2{
+    grid-row: 7/8;
+}
+.details{
+    grid-row: 1/8;
+    grid-column: 3/4;
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    position: relative;
+}
+.bio-data dl{
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.details>h2{
+    font-family: var(--inter);
+}
+.row-direction>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  
+  dt {
+    font-weight: 500;
+    min-width: 60px;
+    font-family: var(--roboto);
+  }
+  
+  dd {
+    margin-left: 12px;
+    font-family: var(--roboto);
+    font-weight: 400;
+  }
+  .next-btn{
+    background-color: #000000;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    color: white;
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 1.2rem
+  }
+  
